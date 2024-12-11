@@ -1,0 +1,64 @@
+﻿{
+  "journey": [
+    {
+      "destination": "D-Rath",
+      "Duckterath": 55,
+      "KoelnDellbrueck": 57,
+      "KoelnHolweide": 0,
+      "KoelnMuelheim": 4,
+      "KoelnBuchforst": 6,
+      "KoelnMesseDeutz": 10,
+      "KoelnHbf": 13
+    },
+    {
+      "destination": "D-Rath",
+      "Duckterath": 15,
+      "KoelnDellbrueck": 17,
+      "KoelnHolweide": 20,
+      "KoelnMuelheim": 24,
+      "KoelnBuchforst": 26,
+      "KoelnMesseDeutz": 30,
+      "KoelnHbf": 33
+    },
+    {
+      "destination": "D-Rath",
+      "Duckterath": 35,
+      "Koeln-Dellbrueck": 37,
+      "KoelnHolweide": 40,
+      "KoelnMuelheim": 44,
+      "KoelnBuchforst": 46,
+      "KoelnMesseDeutz": 50,
+      "KoelnHbf": 53
+    },
+    {
+      "destination": "Bergisch Gladbach",
+      "KoelnHbf": 48,
+      "KoelnMesseDeutz": 50,
+      "KoelnBuchforst": 54,
+      "KoelnMuelheim": 56,
+      "KoelnHolweide": 59,
+      "KoelnDellbrueck": 2,
+      "Duckterath": 5
+    },
+    {
+      "destination": "Bergisch Gladbach",
+      "KoelnHbf": 8,
+      "KoelnMesseDeutz": 10,
+      "KoelnBuchforst": 14,
+      "KoelnMuelheim": 16,
+      "KoelnHolweide": 19,
+      "KoelnDellbrueck": 22,
+      "Duckterath": 25
+    },
+    {
+      "destination": "Bergisch Gladbach",
+      "KoelnHbf": 28,
+      "KoelnMesseDeutz": 30,
+      "KoelnBuchforst": 34,
+      "KoelnMuelheim": 36,
+      "KoelnHolweide": 39,
+      "KoelnDellbrueck": 42,
+      "Duckterath": 45
+    }
+  ]
+}
