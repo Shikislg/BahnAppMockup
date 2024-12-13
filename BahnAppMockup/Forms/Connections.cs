@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,8 @@ namespace BahnAppMockup
             string[] realTimes = Tools.ConvertPlannedTimes(realStart, realEnd);
 
             ConnectionPanel cp = new ConnectionPanel(new Point(10, 50), new string[] { realTimes[0], realTimes[1] }, new string[] { plannedTimes[0], plannedTimes[1] }
-            , "Köln Hbf",plannedEnd - plannedStart, "S11");
+            , "Köln Hbf",Tools.GetTimeDifference(plannedStart,plannedEnd), "S11");
+
             this.Controls.Add(cp.GetMainPanel());
             InitializeComponent();
 

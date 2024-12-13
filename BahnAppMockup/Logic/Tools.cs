@@ -29,11 +29,11 @@ namespace BahnAppMockup.Logic
             if(plannedArrival < plannedDeparture)
             {
 
-                output[1] = DateTime.Now.Hour + ":" + PadInteger(plannedArrival);
+                output[1] = DateTime.Now.Hour+1 + ":" + PadInteger(plannedArrival);
             }
             else
             {
-                output[1] = DateTime.Now.Hour + 1 + ":" + PadInteger(plannedArrival);
+                output[1] = DateTime.Now.Hour + ":" + PadInteger(plannedArrival);
             }
 
             return output;
@@ -44,6 +44,11 @@ namespace BahnAppMockup.Logic
             if(s.Length < 2) s = "0"+s;
 
             return s;
+        }
+        public static int GetTimeDifference(int departureTime, int arrivalTime)
+        {
+            if (arrivalTime < departureTime) return (60 - departureTime) + arrivalTime;
+            else return arrivalTime - departureTime;
         }
     }
 }

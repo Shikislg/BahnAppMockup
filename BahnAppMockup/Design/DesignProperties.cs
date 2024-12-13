@@ -16,6 +16,7 @@ namespace BahnAppMockup.Design
         public static Color redAccent = Color.FromArgb(252, 142, 143);
 
         public static Font buttonFont = new System.Drawing.Font("DB Neo Office Cond", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+        public static Font connectionPanelFont = new System.Drawing.Font("DB Neo Office Cond", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
         public static Font textBoxFont = new System.Drawing.Font("DB Neo Office Cond", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
 
     }

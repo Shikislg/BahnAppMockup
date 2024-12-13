@@ -45,8 +45,8 @@ namespace BahnAppMockup.Components
             RealTimeLabel.Text = $"{RealTime[0]}: {RealTime[1]}";
             PlannedTimeLabel.Text = $"{PlannedTime[0]}: {PlannedTime[1]}";
 
-            DepartingStationLabel.Text = "from"+ DepartingStation;
-            TravelDurationLabel.Text = TravelDuration.ToString()+"m";
+            DepartingStationLabel.Text = "from "+ DepartingStation;
+            TravelDurationLabel.Text = "| "+TravelDuration.ToString()+"m";
             TrainButton.Text = TrainName;
             MainPanel.Location = position;
         }
@@ -80,7 +80,7 @@ namespace BahnAppMockup.Components
             // label5
             // 
             this.RealTimeLabel.AutoSize = true;
-            this.RealTimeLabel.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
+            this.RealTimeLabel.Font = Design.DesignProperties.connectionPanelFont;
             this.RealTimeLabel.ForeColor = System.Drawing.Color.Red;
             this.RealTimeLabel.Location = new System.Drawing.Point(5, 28);
             this.RealTimeLabel.Name = "label5";
@@ -91,9 +91,9 @@ namespace BahnAppMockup.Components
             // label4
             // 
             this.DepartingStationLabel.AutoSize = true;
-            this.DepartingStationLabel.Font = new System.Drawing.Font("Segoe UI", 10.75F, System.Drawing.FontStyle.Bold);
-            this.DepartingStationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.DepartingStationLabel.Location = new System.Drawing.Point(7, 90);
+            this.DepartingStationLabel.Font = Design.DesignProperties.buttonFont;
+            this.DepartingStationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.DepartingStationLabel.Location = new System.Drawing.Point(10, 90);
             this.DepartingStationLabel.Name = "label4";
             this.DepartingStationLabel.Size = new System.Drawing.Size(112, 20);
             this.DepartingStationLabel.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace BahnAppMockup.Components
             this.TrainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TrainButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TrainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TrainButton.Font = new System.Drawing.Font("DIN Pro Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TrainButton.Font = Design.DesignProperties.connectionPanelFont;
             this.TrainButton.Location = new System.Drawing.Point(9, 59);
             this.TrainButton.Name = "button1";
             this.TrainButton.Size = new System.Drawing.Size(341, 28);
@@ -115,9 +115,9 @@ namespace BahnAppMockup.Components
             // label3
             // 
             this.TravelDurationLabel.AutoSize = true;
-            this.TravelDurationLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TravelDurationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-            this.TravelDurationLabel.Location = new System.Drawing.Point(118, 10);
+            this.TravelDurationLabel.Font = Design.DesignProperties.buttonFont;
+            this.TravelDurationLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+            this.TravelDurationLabel.Location = new System.Drawing.Point(110, 5);
             this.TravelDurationLabel.Name = "label3";
             this.TravelDurationLabel.Size = new System.Drawing.Size(39, 15);
             this.TravelDurationLabel.TabIndex = 1;
@@ -126,7 +126,7 @@ namespace BahnAppMockup.Components
             // label1
             // 
             this.PlannedTimeLabel.AutoSize = true;
-            this.PlannedTimeLabel.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold);
+            this.PlannedTimeLabel.Font = Design.DesignProperties.connectionPanelFont;
             this.PlannedTimeLabel.ForeColor = System.Drawing.Color.White;
             this.PlannedTimeLabel.Location = new System.Drawing.Point(5, 5);
             this.PlannedTimeLabel.Name = "label1";
