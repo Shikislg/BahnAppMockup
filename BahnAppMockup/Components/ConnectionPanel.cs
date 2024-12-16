@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BahnAppMockup.Design;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -13,7 +14,6 @@ namespace BahnAppMockup.Components
     public partial class ConnectionPanel : Component
     {
         private Panel MainPanel = new Panel();
-        private RoundButton ViewMap = new RoundButton();
         private Label RealTimeLabel = new Label();
         private Label DepartingStationLabel = new Label();
         private Label TravelDurationLabel = new Label();
@@ -56,8 +56,7 @@ namespace BahnAppMockup.Components
             // 
             // panel1
             // 
-            this.MainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.MainPanel.Controls.Add(this.ViewMap);
+            this.MainPanel.BackColor = DesignProperties.backgroundColor;
             this.MainPanel.Controls.Add(this.RealTimeLabel);
             this.MainPanel.Controls.Add(this.DepartingStationLabel);
             this.MainPanel.Controls.Add(this.TrainButton);
@@ -65,17 +64,8 @@ namespace BahnAppMockup.Components
             this.MainPanel.Controls.Add(this.PlannedTimeLabel);
             this.MainPanel.Location = new System.Drawing.Point(12, 57);
             this.MainPanel.Name = "panel1";
-            this.MainPanel.Size = new System.Drawing.Size(362, 125);
+            this.MainPanel.Size = new System.Drawing.Size(386, 125);
             this.MainPanel.TabIndex = 3;
-            // 
-            // roundButton1
-            // 
-            this.ViewMap.Location = new System.Drawing.Point(315, 10);
-            this.ViewMap.Name = "roundButton1";
-            this.ViewMap.Size = new System.Drawing.Size(35, 35);
-            this.ViewMap.TabIndex = 5;
-            this.ViewMap.UseVisualStyleBackColor = true;
-            this.ViewMap.Click += new System.EventHandler(this.MapViewButton_Click);
             // 
             // label5
             // 
@@ -104,7 +94,7 @@ namespace BahnAppMockup.Components
             this.TrainButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TrainButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TrainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TrainButton.Font = Design.DesignProperties.connectionPanelFont;
+            this.TrainButton.Font = Design.DesignProperties.buttonFont;
             this.TrainButton.Location = new System.Drawing.Point(9, 59);
             this.TrainButton.Name = "button1";
             this.TrainButton.Size = new System.Drawing.Size(341, 28);

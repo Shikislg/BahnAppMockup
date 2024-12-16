@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,8 @@ namespace BahnAppMockup.Logic
             if(DateTime.Now.Minute > plannedDeparture)
             {
                 output[0] = DateTime.Now.Hour+1 + ":" + PadInteger(plannedDeparture);
+                output[1] = DateTime.Now.Hour +1 + ":" + PadInteger(plannedArrival);
+                return output;
             }
             else
             {
@@ -45,10 +48,15 @@ namespace BahnAppMockup.Logic
 
             return s;
         }
-        public static int GetTimeDifference(int departureTime, int arrivalTime)
+        public static int GetTimeDifference(DateTime departureTime, DateTime arrivalTime)
         {
-            if (arrivalTime < departureTime) return (60 - departureTime) + arrivalTime;
-            else return arrivalTime - departureTime;
+            Debug.WriteLine("Time Differnce of: "+departureTime.ToString() + arrivalTime.ToString());
+            return arrivalTime.Subtract(departureTime).Minutes;
+        }
+
+        public static string ConvertDateTimeToString(DateTime dt)
+        {
+            return dt.Hour+":"+PadInteger(dt.Minute);
         }
     }
 }
