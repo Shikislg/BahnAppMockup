@@ -64,7 +64,7 @@ namespace BahnAppMockup.Components
             this.MainPanel.Controls.Add(this.PlannedTimeLabel);
             this.MainPanel.Location = new System.Drawing.Point(12, 57);
             this.MainPanel.Name = "panel1";
-            this.MainPanel.Size = new System.Drawing.Size(386, 125);
+            this.MainPanel.Size = new System.Drawing.Size(384, 125);
             this.MainPanel.TabIndex = 3;
             // 
             // label5

@@ -20,8 +20,10 @@ namespace BahnAppMockup
         ConnectionPanel cp;
         public Connections()
         {
-            //InitializeControlPanel("Köln Hbf", "Bergisch Gladbach Duckterath (S)").ConfigureAwait(false); 
+            InitializeControlPanel("Köln Hbf", "Bergisch Gladbach Duckterath (S)").ConfigureAwait(false);
             InitializeComponent();
+            AdjustPanelSizes();
+
 
         }
 
@@ -48,6 +50,11 @@ namespace BahnAppMockup
                 if (s == departureStation) departureTime = actual[s];
                 if (s == arrivalStation) arrivalTime = actual[s];
             }
+            Debug.WriteLine(plannedDepartureTime);
+            Debug.WriteLine(plannedArrivalTime);
+            Debug.WriteLine(departureTime);
+            Debug.WriteLine(arrivalTime);
+
             string plannedDepartureString = Tools.ConvertDateTimeToString(plannedDepartureTime);
             string plannedArrivalString = Tools.ConvertDateTimeToString(plannedArrivalTime);
 
@@ -56,11 +63,11 @@ namespace BahnAppMockup
 
             this.Invoke((Action)(() =>
             {
-                cp = new ConnectionPanel(new Point(0, 300), new string[] { actualDepartureString, actualArrivalString },
+                cp = new ConnectionPanel(new Point(0, 0), new string[] { actualDepartureString, actualArrivalString },
                     new string[] { plannedDepartureString, plannedArrivalString },
                     "Köln Hbf", Tools.GetTimeDifference(departureTime, arrivalTime), "S11");
 
-                this.Controls.Add(cp.GetMainPanel());
+                this.flowLayoutPanel1.Controls.Add(cp.GetMainPanel());
             }));
 
         }
@@ -75,11 +82,25 @@ namespace BahnAppMockup
         {
             Main.GetInstance().ChangeDisplayedForm(Booking.GetInstance());
         }
+        private void AdjustPanelSizes()
+        {
+            if (flowLayoutPanel1 == null) return;
+            int containerWidth = flowLayoutPanel1.ClientSize.Width; // Get the visible width of the FlowLayoutPanel
+            int padding = 10; // Optional padding to leave space on the sides
+
+            foreach (Panel panel in flowLayoutPanel1.Controls)
+            {
+                panel.Width = containerWidth - padding;
+            }
+        }
+
 
         public static void PredictDelays()
         {
             // Set the Python DLL explicitly
-            Runtime.PythonDLL = @"C:\Users\lohma\AppData\Local\Programs\Python\Python311\python311.dll"; // Update with your Python path
+            //Runtime.PythonDLL = @"C:\Users\lohma\AppData\Local\Programs\Python\Python311\python311.dll"; // Update with your Python path
+            Runtime.PythonDLL = @"C:\Users\GNHZW\AppData\Local\Programs\Python\Python311\python311.dll";
+
 
             string basePath = AppDomain.CurrentDomain.BaseDirectory; // bin\Debug or bin\Release
             string solutionPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));

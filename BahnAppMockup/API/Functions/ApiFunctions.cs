@@ -49,6 +49,7 @@ namespace BahnAppMockup.API.Functions
                     foreach(TrainInformation call in calls)
                     {
                         if (call.destination.Equals("Bergisch Gladbach (S)")) output.Add(call);
+
                     }
                 }
 
