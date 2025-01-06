@@ -35,25 +35,10 @@ namespace BahnAppMockup
 
 
 
-            DateTime plannedDepartureTime = DateTime.Now;
-            DateTime plannedArrivalTime = DateTime.Now;
-            DateTime departureTime = DateTime.Now;
-            DateTime arrivalTime = DateTime.Now;
-
-            foreach(string s in schedule.Keys)
-            {
-                if (s == departureStation) plannedDepartureTime = schedule[s];
-                if(s == arrivalStation) plannedArrivalTime = schedule[s];
-            }
-            foreach (string s in actual.Keys)
-            {
-                if (s == departureStation) departureTime = actual[s];
-                if (s == arrivalStation) arrivalTime = actual[s];
-            }
-            Debug.WriteLine(plannedDepartureTime);
-            Debug.WriteLine(plannedArrivalTime);
-            Debug.WriteLine(departureTime);
-            Debug.WriteLine(arrivalTime);
+            DateTime plannedDepartureTime = schedule[departureStation];
+            DateTime plannedArrivalTime = schedule[arrivalStation];
+            DateTime departureTime = actual[departureStation];
+            DateTime arrivalTime = actual[arrivalStation];
 
             string plannedDepartureString = Tools.ConvertDateTimeToString(plannedDepartureTime);
             string plannedArrivalString = Tools.ConvertDateTimeToString(plannedArrivalTime);
@@ -65,7 +50,7 @@ namespace BahnAppMockup
             {
                 cp = new ConnectionPanel(new Point(0, 0), new string[] { actualDepartureString, actualArrivalString },
                     new string[] { plannedDepartureString, plannedArrivalString },
-                    "Köln Hbf", Tools.GetTimeDifference(departureTime, arrivalTime), "S11");
+                    "Köln Hbf", Tools.GetTimeDifference(departureTime, arrivalTime), "S11", schedule, actual);
 
                 this.flowLayoutPanel1.Controls.Add(cp.GetMainPanel());
             }));
@@ -92,6 +77,11 @@ namespace BahnAppMockup
             {
                 panel.Width = containerWidth - padding;
             }
+            foreach (Control child in flowLayoutPanel1.Controls)
+            {
+                child.Margin = new Padding(0,15,0,0); // Set a uniform margin
+            }
+
         }
 
 

@@ -21,8 +21,6 @@ namespace BahnAppMockup
         [STAThread]
         static void Main()
         {
-            Connections.PredictDelays();
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(BahnAppMockup.Main.GetInstance());//Switched from Form1 to Main

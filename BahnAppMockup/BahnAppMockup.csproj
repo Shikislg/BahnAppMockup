@@ -157,6 +157,7 @@
     <Compile Include="Models\JsonModels\timetable.cs" />
     <Compile Include="Models\JsonModels\TrainInformation.cs" />
     <Compile Include="Models\JsonModels\Trajectory.cs" />
+    <Compile Include="Models\Train.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Components\LocationButton.resx">

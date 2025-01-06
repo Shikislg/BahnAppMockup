@@ -20,7 +20,10 @@ namespace BahnAppMockup.Components
         private Label PlannedTimeLabel = new Label();
         private Button TrainButton = new Button();
 
-        public ConnectionPanel() : this(new Point(10, 50), new string[] {"21:30","21:43"}, new string[] { "21:25", "21:38" }, "Köln-Mülheim", 13, "S11") {}
+        public Dictionary<string, DateTime> schedule;
+        public Dictionary<string, DateTime> actual;
+
+        public ConnectionPanel() : this(new Point(10, 50), new string[] {"21:30","21:43"}, new string[] { "21:25", "21:38" }, "Köln-Mülheim", 13, "S11", null, null) {}
 
         public ConnectionPanel(IContainer container)
         {
@@ -29,9 +32,9 @@ namespace BahnAppMockup.Components
             InitializeComponent();
         }
 
-        public ConnectionPanel(string[] RealTime, string[] PlannedTime, string DepartingStation, int TravelDuration, string TrainName) : this(new Point(0, 0), RealTime, PlannedTime, DepartingStation, TravelDuration, TrainName) {}
+        public ConnectionPanel(string[] RealTime, string[] PlannedTime, string DepartingStation, int TravelDuration, string TrainName) : this(new Point(0, 0), RealTime, PlannedTime, DepartingStation, TravelDuration, TrainName, null, null) {}
 
-        public ConnectionPanel(Point position, string[] RealTime, string[] PlannedTime, string DepartingStation, int TravelDuration, string TrainName)
+        public ConnectionPanel(Point position, string[] RealTime, string[] PlannedTime, string DepartingStation, int TravelDuration, string TrainName, Dictionary<string, DateTime> pSchedule, Dictionary<string, DateTime> pActual)
         {
             InitializeComponent();
 
@@ -49,6 +52,9 @@ namespace BahnAppMockup.Components
             TravelDurationLabel.Text = "| "+TravelDuration.ToString()+"m";
             TrainButton.Text = TrainName;
             MainPanel.Location = position;
+
+            schedule = pSchedule;
+            actual = pActual;
         }
 
         private void GenerateComponents()
@@ -66,6 +72,7 @@ namespace BahnAppMockup.Components
             this.MainPanel.Name = "panel1";
             this.MainPanel.Size = new System.Drawing.Size(384, 125);
             this.MainPanel.TabIndex = 3;
+            this.MainPanel.Click += MainPanel_Click;
             // 
             // label5
             // 
@@ -125,6 +132,10 @@ namespace BahnAppMockup.Components
             this.PlannedTimeLabel.Text = "20:15-20:28";
         }
 
+        private void MainPanel_Click(object sender, EventArgs e)
+        {
+            Main.GetInstance().ChangeDisplayedForm(new Forms.SingleConnection(this));
+        }
 
         public Panel GetMainPanel()
         {

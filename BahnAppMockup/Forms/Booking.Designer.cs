@@ -65,33 +65,30 @@ namespace BahnAppMockup
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("DB Neo Office Cond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(18, 14);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.Size = new System.Drawing.Size(119, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Single journey";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Location = new System.Drawing.Point(24, 54);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(16, 35);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 8);
+            this.panel1.Size = new System.Drawing.Size(124, 5);
             this.panel1.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("DB Neo Office Cond", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(202, 11);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(125, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 20);
+            this.label3.Size = new System.Drawing.Size(22, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "⌄";
             // 
@@ -102,10 +99,9 @@ namespace BahnAppMockup
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(24, 410);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(16, 266);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(529, 58);
+            this.button2.Size = new System.Drawing.Size(353, 38);
             this.button2.TabIndex = 8;
             this.button2.Text = "Search";
             this.button2.UseVisualStyleBackColor = true;
@@ -118,12 +114,11 @@ namespace BahnAppMockup
             this.DestinationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DestinationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DestinationButton.ForeColor = System.Drawing.Color.White;
-            this.DestinationButton.Location = new System.Drawing.Point(24, 129);
-            this.DestinationButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DestinationButton.Location = new System.Drawing.Point(16, 84);
             this.DestinationButton.Name = "DestinationButton";
-            this.DestinationButton.Size = new System.Drawing.Size(537, 46);
+            this.DestinationButton.Size = new System.Drawing.Size(358, 30);
             this.DestinationButton.TabIndex = 9;
-            this.DestinationButton.Text = "Bergisch-Gladbach";
+            this.DestinationButton.Text = "Duckterath";
             this.DestinationButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.DestinationButton.UseVisualStyleBackColor = false;
             this.DestinationButton.Click += new System.EventHandler(this.StationButton_Click);
@@ -135,10 +130,9 @@ namespace BahnAppMockup
             this.DepartureButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DepartureButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DepartureButton.ForeColor = System.Drawing.Color.White;
-            this.DepartureButton.Location = new System.Drawing.Point(24, 74);
-            this.DepartureButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DepartureButton.Location = new System.Drawing.Point(16, 48);
             this.DepartureButton.Name = "DepartureButton";
-            this.DepartureButton.Size = new System.Drawing.Size(537, 46);
+            this.DepartureButton.Size = new System.Drawing.Size(358, 30);
             this.DepartureButton.TabIndex = 10;
             this.DepartureButton.Text = "Köln Hbf";
             this.DepartureButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -153,22 +147,20 @@ namespace BahnAppMockup
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(490, 92);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(327, 60);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 54);
+            this.button1.Size = new System.Drawing.Size(35, 35);
             this.button1.TabIndex = 7;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label1.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(62, 185);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(41, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 31);
+            this.label1.Size = new System.Drawing.Size(62, 20);
             this.label1.TabIndex = 17;
             this.label1.Text = "Date";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -177,21 +169,19 @@ namespace BahnAppMockup
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 185);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 120);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label4.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(437, 185);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(178, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 31);
+            this.label4.Size = new System.Drawing.Size(196, 20);
             this.label4.TabIndex = 18;
             this.label4.Text = "Today, 13:54";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -199,43 +189,39 @@ namespace BahnAppMockup
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(105)))), ((int)(((byte)(115)))));
-            this.panel2.Location = new System.Drawing.Point(24, 226);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(16, 147);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(531, 2);
+            this.panel2.Size = new System.Drawing.Size(354, 1);
             this.panel2.TabIndex = 19;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 238);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 155);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(33, 35);
+            this.pictureBox2.Size = new System.Drawing.Size(22, 23);
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label5.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(62, 238);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(41, 155);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 35);
+            this.label5.Size = new System.Drawing.Size(133, 23);
             this.label5.TabIndex = 21;
             this.label5.Text = "Passengers, bicycles";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label6.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(369, 240);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(164, 156);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(192, 31);
+            this.label6.Size = new System.Drawing.Size(210, 20);
             this.label6.TabIndex = 22;
             this.label6.Text = "1 pers. | 2nd Cl. | 1 dis.";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -244,42 +230,38 @@ namespace BahnAppMockup
             // 
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(24, 294);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(16, 191);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 28);
+            this.pictureBox3.Size = new System.Drawing.Size(24, 18);
             this.pictureBox3.TabIndex = 23;
             this.pictureBox3.TabStop = false;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(105)))), ((int)(((byte)(115)))));
-            this.panel3.Location = new System.Drawing.Point(24, 283);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(16, 184);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(531, 2);
+            this.panel3.Size = new System.Drawing.Size(354, 1);
             this.panel3.TabIndex = 20;
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label7.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(62, 295);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(41, 192);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(175, 28);
+            this.label7.Size = new System.Drawing.Size(117, 18);
             this.label7.TabIndex = 24;
             this.label7.Text = "Options";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label8.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(241, 294);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(121, 191);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(320, 31);
+            this.label8.Size = new System.Drawing.Size(253, 20);
             this.label8.TabIndex = 25;
             this.label8.Text = "Means of transport: All | Transfer ti...";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -288,61 +270,58 @@ namespace BahnAppMockup
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 345);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox4.Location = new System.Drawing.Point(16, 224);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 38);
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(105)))), ((int)(((byte)(115)))));
-            this.panel4.Location = new System.Drawing.Point(22, 333);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Location = new System.Drawing.Point(15, 216);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(531, 2);
+            this.panel4.Size = new System.Drawing.Size(354, 1);
             this.panel4.TabIndex = 21;
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label9.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(68, 345);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(45, 224);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(236, 38);
+            this.label9.Size = new System.Drawing.Size(199, 25);
             this.label9.TabIndex = 27;
             this.label9.Text = "Show fastest connections";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.label10.Font = new System.Drawing.Font("DB Neo Office Cond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(241, 349);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(205, 227);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(320, 31);
+            this.label10.Size = new System.Drawing.Size(169, 20);
             this.label10.TabIndex = 28;
             this.label10.Text = "Active";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel5
             // 
-            this.panel5.Location = new System.Drawing.Point(1, 476);
-            this.BackColor = Design.DesignProperties.darkBackgroundColor;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(24)))), ((int)(((byte)(33)))));
+            this.panel5.Location = new System.Drawing.Point(1, 324);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(579, 625);
+            this.panel5.Size = new System.Drawing.Size(386, 528);
             this.panel5.TabIndex = 29;
             // 
             // Booking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(579, 1100);
+            this.ClientSize = new System.Drawing.Size(386, 715);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -368,7 +347,6 @@ namespace BahnAppMockup
             this.Controls.Add(this.DestinationButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Booking";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
