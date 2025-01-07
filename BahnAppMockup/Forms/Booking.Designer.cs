@@ -56,10 +56,15 @@ namespace BahnAppMockup
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.delayLabel = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -309,11 +314,63 @@ namespace BahnAppMockup
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(24)))), ((int)(((byte)(33)))));
+            this.panel5.Controls.Add(this.delayLabel);
+            this.panel5.Controls.Add(this.button5);
+            this.panel5.Controls.Add(this.button4);
             this.panel5.Location = new System.Drawing.Point(1, 324);
             this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(386, 528);
             this.panel5.TabIndex = 29;
+            // 
+            // delayLabel
+            // 
+            this.delayLabel.Font = new System.Drawing.Font("DB Neo Office Cond", 12F);
+            this.delayLabel.ForeColor = System.Drawing.Color.White;
+            this.delayLabel.Location = new System.Drawing.Point(12, 166);
+            this.delayLabel.Name = "delayLabel";
+            this.delayLabel.Size = new System.Drawing.Size(356, 216);
+            this.delayLabel.TabIndex = 31;
+            this.delayLabel.Text = "Delay";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(105)))), ((int)(((byte)(115)))));
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(16, 109);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(353, 38);
+            this.button5.TabIndex = 31;
+            this.button5.Text = "Calculate Delay";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Location = new System.Drawing.Point(11, 63);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(358, 24);
+            this.button4.TabIndex = 31;
+            this.button4.Text = "Delay Buchforst";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.Location = new System.Drawing.Point(14, 342);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(358, 24);
+            this.button3.TabIndex = 30;
+            this.button3.Text = "Delay Deutz";
             // 
             // Booking
             // 
@@ -322,6 +379,7 @@ namespace BahnAppMockup
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(56)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(386, 715);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -352,6 +410,8 @@ namespace BahnAppMockup
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,6 +441,10 @@ namespace BahnAppMockup
         private Label label9;
         private Label label10;
         private Panel panel5;
+        private Button button5;
+        private TextBox button4;
+        private TextBox button3;
+        private Label delayLabel;
     }
 }
 

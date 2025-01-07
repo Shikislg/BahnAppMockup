@@ -1,4 +1,5 @@
 ﻿using BahnAppMockup.Forms;
+using Python.Runtime;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -102,6 +104,68 @@ namespace BahnAppMockup
             Debug.WriteLine(DepartureButton.Text);
             DepartureButton.Text = text;
             Debug.WriteLine(DepartureButton.Text);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string delayOne = button3.Text;
+            string delayTwo = button4.Text;
+            string basePath = AppDomain.CurrentDomain.BaseDirectory; // bin\Debug or bin\Release
+            string solutionPath = Path.GetFullPath(Path.Combine(basePath, @"..\..\..\"));
+            string aiFolderPath = Path.Combine(solutionPath, "AI");
+            // Set the Python DLL explicitly
+            Runtime.PythonDLL = @"C:\Users\lohma\AppData\Local\Programs\Python\Python311\python311.dll"; // Update with your Python path
+            //Runtime.PythonDLL = @"C:\Users\GNHZW\AppData\Local\Programs\Python\Python311\python311.dll";
+            try
+            {
+                // Initialize Python
+                PythonEngine.Initialize();
+
+                using (Py.GIL()) // Acquire the Global Interpreter Lock
+                {
+                    PythonEngine.Initialize();
+
+                    using (Py.GIL())
+                    {
+                        // Add the dynamically found 'AI' folder to Python's sys.path
+                        dynamic sys = Py.Import("sys");
+                        sys.path.append(aiFolderPath);
+
+                        // Import the Python file
+                        dynamic predictor = Py.Import("DelayPredictor");
+
+                        // Call the Python function
+                        dynamic result = predictor.predict_delays(delayOne, delayTwo);
+
+                        // Display the result
+                        Console.WriteLine("Predicted Delays:");
+
+                        this.Invoke((Action)(() =>
+                        {
+                            string s = "";
+                            foreach (var item in result)
+                            {
+                                Console.WriteLine($"{item}: {result[item]} Minutes");
+                                s += $"{item}: {(int)result[item]} Minutes\n";
+
+                                string itemString = item.ToString();
+                                if (itemString.Equals("Verspätung Duckterath"))
+                                {
+                                    this.delayLabel.Text = ""+ s;
+                                }
+                            }
+                        }));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+            finally
+            {
+                PythonEngine.Shutdown();
+            }
         }
     }
 }
